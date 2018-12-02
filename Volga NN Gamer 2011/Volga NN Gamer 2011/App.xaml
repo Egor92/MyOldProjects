@@ -1,0 +1,15 @@
+﻿<Application x:Class="Volga_NN_Gamer_2011.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+         	<ResourceDictionary.MergedDictionaries>
+         		<!-->
+         			<ResourceDictionary Source="TwilightBlue.xaml"/>   
+				<-->
+                <ResourceDictionary Source="VNNG2011ElementsStyles.xaml"/>   	
+			</ResourceDictionary.MergedDictionaries>      
+		 </ResourceDictionary>
+    </Application.Resources>
+</Application>

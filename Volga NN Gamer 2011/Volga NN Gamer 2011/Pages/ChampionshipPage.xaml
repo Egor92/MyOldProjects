@@ -1,0 +1,45 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+    x:Class="Volga_NN_Gamer_2011.ChampionshipPage"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d" KeepAlive="True"
+    d:DesignHeight="300" d:DesignWidth="300"
+    Title="ChampionshipPage">
+    <TabControl>
+        <TabItem Header="Таблица" >
+        	<Grid >
+		        <ListView x:Name="ClubsList" Loaded="ClubsList_Loaded" >
+		            <ListView.ItemTemplate>
+		                <DataTemplate>
+		                    <Grid Background="{Binding Path=Colors1.BackColor.Name}" Width="500">
+		                    	<Grid.ColumnDefinitions>
+		                    		<ColumnDefinition Width="0.5*"/>
+		                    		<ColumnDefinition Width="0.5*"/>
+		                    	</Grid.ColumnDefinitions>
+								
+		                        <TextBlock Height="Auto" FontSize="12" Foreground="{Binding Path=Colors1.ForeColor.Name}" Grid.Column="0"> 
+		                        	<Hyperlink Name="LinkToClub" Click="LinkToClub_Click">
+		                            	<Run Text="{Binding Path=FullName, Mode=OneWay}"/>
+		                        	</Hyperlink>
+								</TextBlock>
+								
+		                        <TextBlock Height="Auto" FontSize="12" Foreground="{Binding Path=Colors1.ForeColor.Name}" Grid.Column="1">
+		                        	 <Run Text="{Binding Path=City.Name, Mode=OneWay}"/>
+								</TextBlock>
+								
+							</Grid>
+		                </DataTemplate>
+		            </ListView.ItemTemplate>
+		        </ListView>
+        		     	
+			</Grid>
+        </TabItem>
+        <TabItem Header="Статистика">
+       		<Grid />
+       	</TabItem>
+       </TabControl>
+
+</Page>

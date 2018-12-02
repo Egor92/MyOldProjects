@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WpfDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="WpfDBModelStoreContainer">
+          <EntitySet Name="Amplua" EntityType="WpfDBModel.Store.Amplua" store:Type="Tables" store:Schema="dbo" store:Name="Amplua">
+            <DefiningQuery>SELECT 
+      [Amplua].[Код] AS [Код], 
+      [Amplua].[Амплуа] AS [Амплуа]
+      FROM [dbo].[Amplua] AS [Amplua]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Championship" EntityType="WpfDBModel.Store.Championship" store:Type="Tables" store:Schema="dbo" store:Name="Championship">
+            <DefiningQuery>SELECT 
+      [Championship].[Код] AS [Код], 
+      [Championship].[Название] AS [Название], 
+      [Championship].[Страна] AS [Страна], 
+      [Championship].[Тип] AS [Тип], 
+      [Championship].[Клубов] AS [Клубов], 
+      [Championship].[Репутация] AS [Репутация], 
+      [Championship].[Активирован] AS [Активирован]
+      FROM [dbo].[Championship] AS [Championship]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ClubHistory" EntityType="WpfDBModel.Store.ClubHistory" store:Type="Tables" store:Schema="dbo" store:Name="ClubHistory">
+            <DefiningQuery>SELECT 
+      [ClubHistory].[Код] AS [Код], 
+      [ClubHistory].[Клуб] AS [Клуб], 
+      [ClubHistory].[Сезон] AS [Сезон], 
+      [ClubHistory].[Дивизион] AS [Дивизион], 
+      [ClubHistory].[Игры] AS [Игры], 
+      [ClubHistory].[Выигрыши] AS [Выигрыши], 
+      [ClubHistory].[Ничьи] AS [Ничьи], 
+      [ClubHistory].[Поражения] AS [Поражения], 
+      [ClubHistory].[Очки] AS [Очки], 
+      [ClubHistory].[Голы] AS [Голы], 
+      [ClubHistory].[Пропущенные мячи] AS [Пропущенные мячи], 
+      [ClubHistory].[Позиция] AS [Позиция]
+      FROM [dbo].[ClubHistory] AS [ClubHistory]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ClubPopularity" EntityType="WpfDBModel.Store.ClubPopularity" store:Type="Tables" store:Schema="dbo" store:Name="ClubPopularity">
+            <DefiningQuery>SELECT 
+      [ClubPopularity].[Код] AS [Код], 
+      [ClubPopularity].[Регион] AS [Регион], 
+      [ClubPopularity].[Клуб] AS [Клуб], 
+      [ClubPopularity].[Популярность] AS [Популярность]
+      FROM [dbo].[ClubPopularity] AS [ClubPopularity]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Country" EntityType="WpfDBModel.Store.Country" store:Type="Tables" store:Schema="dbo" store:Name="Country">
+            <DefiningQuery>SELECT 
+      [Country].[Код] AS [Код], 
+      [Country].[Страна] AS [Страна], 
+      [Country].[Репутация] AS [Репутация], 
+      [Country].[Цвет1] AS [Цвет1], 
+      [Country].[Цвет2] AS [Цвет2], 
+      [Country].[Активирован] AS [Активирован]
+      FROM [dbo].[Country] AS [Country]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="GameData" EntityType="WpfDBModel.Store.GameData" store:Type="Tables" store:Schema="dbo" store:Name="GameData">
+            <DefiningQuery>SELECT 
+      [GameData].[Код] AS [Код], 
+      [GameData].[Дата] AS [Дата], 
+      [GameData].[Уровень сложности] AS [Уровень сложности], 
+      [GameData].[Персона] AS [Персона], 
+      [GameData].[Тактика] AS [Тактика], 
+      [GameData].[Тренер вратарей] AS [Тренер вратарей], 
+      [GameData].[Тренер защитников] AS [Тренер защитников], 
+      [GameData].[Тренер полузащитников] AS [Тренер полузащитников], 
+      [GameData].[Тренер нападающих] AS [Тренер нападающих], 
+      [GameData].[Тренер по физподготовке] AS [Тренер по физподготовке], 
+      [GameData].[Скаут] AS [Скаут], 
+      [GameData].[Физиотерапефт] AS [Физиотерапефт]
+      FROM [dbo].[GameData] AS [GameData]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Injury" EntityType="WpfDBModel.Store.Injury" store:Type="Tables" store:Schema="dbo" store:Name="Injury">
+            <DefiningQuery>SELECT 
+      [Injury].[Код] AS [Код], 
+      [Injury].[Игрок] AS [Игрок], 
+      [Injury].[Тип] AS [Тип], 
+      [Injury].[Восстановление] AS [Восстановление]
+      FROM [dbo].[Injury] AS [Injury]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Interest" EntityType="WpfDBModel.Store.Interest" store:Type="Tables" store:Schema="dbo" store:Name="Interest">
+            <DefiningQuery>SELECT 
+      [Interest].[Код] AS [Код], 
+      [Interest].[Клуб] AS [Клуб], 
+      [Interest].[Покупка\Аренда] AS [Покупка\Аренда], 
+      [Interest].[Уровень] AS [Уровень], 
+      [Interest].[Предложание сделано] AS [Предложание сделано], 
+      [Interest].[Сумма] AS [Сумма]
+      FROM [dbo].[Interest] AS [Interest]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Person" EntityType="WpfDBModel.Store.Person" store:Type="Tables" store:Schema="dbo" store:Name="Person">
+            <DefiningQuery>SELECT 
+      [Person].[Код] AS [Код], 
+      [Person].[Фамилия] AS [Фамилия], 
+      [Person].[Имя] AS [Имя], 
+      [Person].[Работа] AS [Работа], 
+      [Person].[Клуб] AS [Клуб], 
+      [Person].[ДР] AS [ДР], 
+      [Person].[Страна1] AS [Страна1], 
+      [Person].[Страна2] AS [Страна2], 
+      [Person].[Репутация] AS [Репутация]
+      FROM [dbo].[Person] AS [Person]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PlayedMatchesOfPlayer" EntityType="WpfDBModel.Store.PlayedMatchesOfPlayer" store:Type="Tables" store:Schema="dbo" store:Name="PlayedMatchesOfPlayer">
+            <DefiningQuery>SELECT 
+      [PlayedMatchesOfPlayer].[Код] AS [Код], 
+      [PlayedMatchesOfPlayer].[Игрок] AS [Игрок], 
+      [PlayedMatchesOfPlayer].[Матч] AS [Матч], 
+      [PlayedMatchesOfPlayer].[Сторона] AS [Сторона], 
+      [PlayedMatchesOfPlayer].[Голы] AS [Голы], 
+      [PlayedMatchesOfPlayer].[Гол передачи] AS [Гол передачи], 
+      [PlayedMatchesOfPlayer].[ЖК] AS [ЖК], 
+      [PlayedMatchesOfPlayer].[КК] AS [КК], 
+      [PlayedMatchesOfPlayer].[Минуты] AS [Минуты], 
+      [PlayedMatchesOfPlayer].[Оценка] AS [Оценка]
+      FROM [dbo].[PlayedMatchesOfPlayer] AS [PlayedMatchesOfPlayer]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PlayerInfo" EntityType="WpfDBModel.Store.PlayerInfo" store:Type="Tables" store:Schema="dbo" store:Name="PlayerInfo">
+            <DefiningQuery>SELECT 
+      [PlayerInfo].[Код] AS [Код], 
+      [PlayerInfo].[Клуб (аренда)] AS [Клуб (аренда)], 
+      [PlayerInfo].[Рост] AS [Рост], 
+      [PlayerInfo].[Вес] AS [Вес], 
+      [PlayerInfo].[Амплуа] AS [Амплуа], 
+      [PlayerInfo].[Номер] AS [Номер], 
+      [PlayerInfo].[Приоритет способностей] AS [Приоритет способностей]
+      FROM [dbo].[PlayerInfo] AS [PlayerInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TacticPoint" EntityType="WpfDBModel.Store.TacticPoint" store:Type="Tables" store:Schema="dbo" store:Name="TacticPoint">
+            <DefiningQuery>SELECT 
+      [TacticPoint].[Код] AS [Код], 
+      [TacticPoint].[Определитель] AS [Определитель], 
+      [TacticPoint].[Точка] AS [Точка], 
+      [TacticPoint].[Номер] AS [Номер]
+      FROM [dbo].[TacticPoint] AS [TacticPoint]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TacticPointLocation" EntityType="WpfDBModel.Store.TacticPointLocation" store:Type="Tables" store:Schema="dbo" store:Name="TacticPointLocation">
+            <DefiningQuery>SELECT 
+      [TacticPointLocation].[Код] AS [Код], 
+      [TacticPointLocation].[X] AS [X], 
+      [TacticPointLocation].[Y] AS [Y]
+      FROM [dbo].[TacticPointLocation] AS [TacticPointLocation]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TypeOfInjury" EntityType="WpfDBModel.Store.TypeOfInjury" store:Type="Tables" store:Schema="dbo" store:Name="TypeOfInjury">
+            <DefiningQuery>SELECT 
+      [TypeOfInjury].[Код] AS [Код], 
+      [TypeOfInjury].[Тип] AS [Тип], 
+      [TypeOfInjury].[Минимум дней] AS [Минимум дней], 
+      [TypeOfInjury].[Максимум дней] AS [Максимум дней], 
+      [TypeOfInjury].[Только при игре] AS [Только при игре]
+      FROM [dbo].[TypeOfInjury] AS [TypeOfInjury]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Amplua" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Amplua">
+          <Key>
+            <PropertyRef Name="Амплуа" />
+          </Key>
+          <Property Name="Код" Type="int" />
+          <Property Name="Амплуа" Type="nvarchar" Nullable="false" MaxLength="31" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Championship" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Championship">
+          <Key>
+            <PropertyRef Name="Название" />
+            <PropertyRef Name="Активирован" />
+          </Key>
+          <Property Name="Код" Type="int" />
+          <Property Name="Название" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Страна" Type="int" />
+          <Property Name="Тип" Type="int" />
+          <Property Name="Клубов" Type="int" />
+          <Property Name="Репутация" Type="int" />
+          <Property Name="Активирован" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.ClubHistory" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="ClubHistory">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Клуб" Type="int" />
+          <Property Name="Сезон" Type="nvarchar" MaxLength="15" />
+          <Property Name="Дивизион" Type="int" />
+          <Property Name="Игры" Type="int" />
+          <Property Name="Выигрыши" Type="int" />
+          <Property Name="Ничьи" Type="int" />
+          <Property Name="Поражения" Type="int" />
+          <Property Name="Очки" Type="int" />
+          <Property Name="Голы" Type="int" />
+          <Property Name="Пропущенные мячи" Type="int" />
+          <Property Name="Позиция" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.ClubPopularity" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="ClubPopularity">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Регион" Type="int" />
+          <Property Name="Клуб" Type="int" />
+          <Property Name="Популярность" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Country" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Активирован" />
+          </Key>
+          <Property Name="Код" Type="int" />
+          <Property Name="Страна" Type="nvarchar" MaxLength="255" />
+          <Property Name="Репутация" Type="int" />
+          <Property Name="Цвет1" Type="int" />
+          <Property Name="Цвет2" Type="int" />
+          <Property Name="Активирован" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.GameData" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="GameData">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Дата" Type="datetime" />
+          <Property Name="Уровень сложности" Type="int" />
+          <Property Name="Персона" Type="int" />
+          <Property Name="Тактика" Type="int" />
+          <Property Name="Тренер вратарей" Type="int" />
+          <Property Name="Тренер защитников" Type="int" />
+          <Property Name="Тренер полузащитников" Type="int" />
+          <Property Name="Тренер нападающих" Type="int" />
+          <Property Name="Тренер по физподготовке" Type="int" />
+          <Property Name="Скаут" Type="int" />
+          <Property Name="Физиотерапефт" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Injury" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Injury">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Игрок" Type="int" />
+          <Property Name="Тип" Type="int" />
+          <Property Name="Восстановление" Type="datetime" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Interest" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Interest">
+          <Key>
+            <PropertyRef Name="Код" />
+            <PropertyRef Name="Покупка\Аренда" />
+            <PropertyRef Name="Предложание сделано" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Клуб" Type="int" />
+          <Property Name="Покупка\Аренда" Type="bit" Nullable="false" />
+          <Property Name="Уровень" Type="int" />
+          <Property Name="Предложание сделано" Type="bit" Nullable="false" />
+          <Property Name="Сумма" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.Person" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="127" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="127" />
+          <Property Name="Работа" Type="int" />
+          <Property Name="Клуб" Type="int" />
+          <Property Name="ДР" Type="datetime" />
+          <Property Name="Страна1" Type="int" />
+          <Property Name="Страна2" Type="int" />
+          <Property Name="Репутация" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.PlayedMatchesOfPlayer" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="PlayedMatchesOfPlayer">
+          <Key>
+            <PropertyRef Name="Код" />
+            <PropertyRef Name="Сторона" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Игрок" Type="int" />
+          <Property Name="Матч" Type="int" />
+          <Property Name="Сторона" Type="bit" Nullable="false" />
+          <Property Name="Голы" Type="int" />
+          <Property Name="Гол передачи" Type="int" />
+          <Property Name="ЖК" Type="int" />
+          <Property Name="КК" Type="int" />
+          <Property Name="Минуты" Type="int" />
+          <Property Name="Оценка" Type="float" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.PlayerInfo" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="PlayerInfo">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Клуб (аренда)" Type="int" />
+          <Property Name="Рост" Type="int" />
+          <Property Name="Вес" Type="int" />
+          <Property Name="Амплуа" Type="int" />
+          <Property Name="Номер" Type="int" />
+          <Property Name="Приоритет способностей" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.TacticPoint" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="TacticPoint">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="Определитель" Type="int" />
+          <Property Name="Точка" Type="int" />
+          <Property Name="Номер" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.TacticPointLocation" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="TacticPointLocation">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="int" Nullable="false" />
+          <Property Name="X" Type="int" />
+          <Property Name="Y" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6002: В таблице или представлении "WpfDB.dbo.TypeOfInjury" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+      -->
+        <EntityType Name="TypeOfInjury">
+          <Key>
+            <PropertyRef Name="Только при игре" />
+          </Key>
+          <Property Name="Код" Type="int" />
+          <Property Name="Тип" Type="nvarchar" MaxLength="31" />
+          <Property Name="Минимум дней" Type="int" />
+          <Property Name="Максимум дней" Type="int" />
+          <Property Name="Только при игре" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.AbilityPriority" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="AbilityPriority">
+        <Property Name="Код" Type="int" />
+        <Property Name="Тип" Type="nvarchar" MaxLength="31" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Attributes" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Attributes">
+        <Property Name="Код" Type="int" />
+        <Property Name="Дриблинг" Type="int" />
+        <Property Name="Завершение атаки" Type="int" />
+        <Property Name="Игра головой" Type="int" />
+        <Property Name="Штрафные удары" Type="int" />
+        <Property Name="Навесы" Type="int" />
+        <Property Name="Отбор" Type="int" />
+        <Property Name="Пас" Type="int" />
+        <Property Name="Техника" Type="int" />
+        <Property Name="Дальние удары" Type="int" />
+        <Property Name="Выбор позиции" Type="int" />
+        <Property Name="Командная игра" Type="int" />
+        <Property Name="Концентрация" Type="int" />
+        <Property Name="Принятие решений" Type="int" />
+        <Property Name="Созидание" Type="int" />
+        <Property Name="Самообладание" Type="int" />
+        <Property Name="Тактика" Type="int" />
+        <Property Name="Опека" Type="int" />
+        <Property Name="Мораль" Type="int" />
+        <Property Name="Выносливость" Type="int" />
+        <Property Name="Ловкость" Type="int" />
+        <Property Name="Прыгучесть" Type="int" />
+        <Property Name="Сила" Type="int" />
+        <Property Name="Скорость" Type="int" />
+        <Property Name="Ускорение" Type="int" />
+        <Property Name="Баланс" Type="int" />
+        <Property Name="Реакция" Type="int" />
+        <Property Name="Усталость" Type="int" />
+        <Property Name="Ввод мяча" Type="int" />
+        <Property Name="Игра в воздухе" Type="int" />
+        <Property Name="Игра руками" Type="int" />
+        <Property Name="Один на один" Type="int" />
+        <Property Name="Организация обороны" Type="int" />
+        <Property Name="Рефлекс" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.City" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="City">
+        <Property Name="Код" Type="int" />
+        <Property Name="Город" Type="nvarchar" MaxLength="255" />
+        <Property Name="Репутация" Type="int" />
+        <Property Name="Страна" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Club" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Club">
+        <Property Name="Код" Type="int" />
+        <Property Name="Полное название" Type="nvarchar" MaxLength="255" />
+        <Property Name="Короткое название" Type="nvarchar" MaxLength="127" />
+        <Property Name="Цвет1" Type="int" />
+        <Property Name="Цвет2" Type="int" />
+        <Property Name="Цвет3" Type="int" />
+        <Property Name="Город" Type="int" />
+        <Property Name="Стадион" Type="int" />
+        <Property Name="Лига" Type="int" />
+        <Property Name="Кубок" Type="int" />
+        <Property Name="Суперкубок" Type="int" />
+        <Property Name="Бюджет" Type="int" />
+        <Property Name="Репутация" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.CoachInfo" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="CoachInfo">
+        <Property Name="Код" Type="int" />
+        <Property Name="Тактика" Type="int" />
+        <Property Name="Расстановка защиты" Type="int" />
+        <Property Name="Расстановка полузащиты" Type="int" />
+        <Property Name="Расстановка нападения" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Job" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Job">
+        <Property Name="Код" Type="int" />
+        <Property Name="Текст" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.KitColor" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="KitColor">
+        <Property Name="Код" Type="int" />
+        <Property Name="Цвет1" Type="nvarchar" MaxLength="255" />
+        <Property Name="Цвет2" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Match" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Match">
+        <Property Name="Код" Type="int" />
+        <Property Name="Дата" Type="datetime" />
+        <Property Name="Турнир" Type="int" />
+        <Property Name="Тур" Type="int" />
+        <Property Name="Дом" Type="int" />
+        <Property Name="Гости" Type="int" />
+        <Property Name="Гол Д" Type="int" />
+        <Property Name="Гол Г" Type="int" />
+        <Property Name="Пенальти Д" Type="int" />
+        <Property Name="Пенальти Г" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.PriceValue" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="PriceValue">
+        <Property Name="Код" Type="int" />
+        <Property Name="Стоимость" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.RefereeInfo" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="RefereeInfo">
+        <Property Name="Код" Type="int" />
+        <Property Name="Город" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Region" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Region">
+        <Property Name="Код" Type="int" />
+        <Property Name="Имя" Type="nvarchar" MaxLength="31" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Stadium" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Stadium">
+        <Property Name="Код" Type="int" />
+        <Property Name="Название" Type="nvarchar" MaxLength="255" />
+        <Property Name="Город" Type="int" />
+        <Property Name="Вместимость" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.TacticOfLine" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="TacticOfLine">
+        <Property Name="Код" Type="int" />
+        <Property Name="Определитель" Type="int" />
+        <Property Name="Формация" Type="int" />
+        <Property Name="Текст" Type="nvarchar" MaxLength="127" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.TotalTactic" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="TotalTactic">
+        <Property Name="Код" Type="int" />
+        <Property Name="Защита" Type="int" />
+        <Property Name="Полузащита" Type="int" />
+        <Property Name="Нападение" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Training" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Training">
+        <Property Name="Код" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.Transfer" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Transfer">
+        <Property Name="Код" Type="int" />
+        <Property Name="Игрок" Type="int" />
+        <Property Name="Откуда" Type="int" />
+        <Property Name="Куда" Type="int" />
+        <Property Name="Дата" Type="datetime" />
+        <Property Name="Сумма" Type="int" />
+      </EntityType>
+      Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "WpfDB.dbo.TypeOfChamp" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="TypeOfChamp">
+        <Property Name="Код" Type="int" />
+        <Property Name="Тип" Type="nvarchar" MaxLength="31" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WpfDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="WpfDBEntities">
+          <EntitySet Name="Ampluas" EntityType="WpfDBModel.Amplua" />
+          <EntitySet Name="Championships" EntityType="WpfDBModel.Championship" />
+          <EntitySet Name="ClubHistories" EntityType="WpfDBModel.ClubHistory" />
+          <EntitySet Name="ClubPopularities" EntityType="WpfDBModel.ClubPopularity" />
+          <EntitySet Name="Countries" EntityType="WpfDBModel.Country" />
+          <EntitySet Name="GameDatas" EntityType="WpfDBModel.GameData" />
+          <EntitySet Name="Injuries" EntityType="WpfDBModel.Injury" />
+          <EntitySet Name="Interests" EntityType="WpfDBModel.Interest" />
+          <EntitySet Name="People" EntityType="WpfDBModel.Person" />
+          <EntitySet Name="PlayedMatchesOfPlayers" EntityType="WpfDBModel.PlayedMatchesOfPlayer" />
+          <EntitySet Name="PlayerInfoes" EntityType="WpfDBModel.PlayerInfo" />
+          <EntitySet Name="TacticPoints" EntityType="WpfDBModel.TacticPoint" />
+          <EntitySet Name="TacticPointLocations" EntityType="WpfDBModel.TacticPointLocation" />
+          <EntitySet Name="TypeOfInjuries" EntityType="WpfDBModel.TypeOfInjury" />
+        </EntityContainer>
+        <EntityType Name="Amplua">
+          <Key>
+            <PropertyRef Name="Амплуа" />
+          </Key>
+          <Property Name="Код" Type="Int32" />
+          <Property Name="Амплуа" Type="String" Nullable="false" MaxLength="31" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Championship">
+          <Key>
+            <PropertyRef Name="Название" />
+            <PropertyRef Name="Активирован" />
+          </Key>
+          <Property Name="Код" Type="Int32" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Страна" Type="Int32" />
+          <Property Name="Тип" Type="Int32" />
+          <Property Name="Клубов" Type="Int32" />
+          <Property Name="Репутация" Type="Int32" />
+          <Property Name="Активирован" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClubHistory">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Клуб" Type="Int32" />
+          <Property Name="Сезон" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="Дивизион" Type="Int32" />
+          <Property Name="Игры" Type="Int32" />
+          <Property Name="Выигрыши" Type="Int32" />
+          <Property Name="Ничьи" Type="Int32" />
+          <Property Name="Поражения" Type="Int32" />
+          <Property Name="Очки" Type="Int32" />
+          <Property Name="Голы" Type="Int32" />
+          <Property Name="Пропущенные_мячи" Type="Int32" />
+          <Property Name="Позиция" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ClubPopularity">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Регион" Type="Int32" />
+          <Property Name="Клуб" Type="Int32" />
+          <Property Name="Популярность" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Активирован" />
+          </Key>
+          <Property Name="Код" Type="Int32" />
+          <Property Name="Страна" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Репутация" Type="Int32" />
+          <Property Name="Цвет1" Type="Int32" />
+          <Property Name="Цвет2" Type="Int32" />
+          <Property Name="Активирован" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GameData">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Дата" Type="DateTime" />
+          <Property Name="Уровень_сложности" Type="Int32" />
+          <Property Name="Персона" Type="Int32" />
+          <Property Name="Тактика" Type="Int32" />
+          <Property Name="Тренер_вратарей" Type="Int32" />
+          <Property Name="Тренер_защитников" Type="Int32" />
+          <Property Name="Тренер_полузащитников" Type="Int32" />
+          <Property Name="Тренер_нападающих" Type="Int32" />
+          <Property Name="Тренер_по_физподготовке" Type="Int32" />
+          <Property Name="Скаут" Type="Int32" />
+          <Property Name="Физиотерапефт" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Injury">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Игрок" Type="Int32" />
+          <Property Name="Тип" Type="Int32" />
+          <Property Name="Восстановление" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Interest">
+          <Key>
+            <PropertyRef Name="Код" />
+            <PropertyRef Name="Покупка_Аренда" />
+            <PropertyRef Name="Предложание_сделано" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Клуб" Type="Int32" />
+          <Property Name="Покупка_Аренда" Type="Boolean" Nullable="false" />
+          <Property Name="Уровень" Type="Int32" />
+          <Property Name="Предложание_сделано" Type="Boolean" Nullable="false" />
+          <Property Name="Сумма" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Фамилия" Type="String" MaxLength="127" Unicode="true" FixedLength="false" />
+          <Property Name="Имя" Type="String" MaxLength="127" Unicode="true" FixedLength="false" />
+          <Property Name="Работа" Type="Int32" />
+          <Property Name="Клуб" Type="Int32" />
+          <Property Name="ДР" Type="DateTime" />
+          <Property Name="Страна1" Type="Int32" />
+          <Property Name="Страна2" Type="Int32" />
+          <Property Name="Репутация" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PlayedMatchesOfPlayer">
+          <Key>
+            <PropertyRef Name="Код" />
+            <PropertyRef Name="Сторона" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Игрок" Type="Int32" />
+          <Property Name="Матч" Type="Int32" />
+          <Property Name="Сторона" Type="Boolean" Nullable="false" />
+          <Property Name="Голы" Type="Int32" />
+          <Property Name="Гол_передачи" Type="Int32" />
+          <Property Name="ЖК" Type="Int32" />
+          <Property Name="КК" Type="Int32" />
+          <Property Name="Минуты" Type="Int32" />
+          <Property Name="Оценка" Type="Double" />
+        </EntityType>
+        <EntityType Name="PlayerInfo">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Клуб__аренда_" Type="Int32" />
+          <Property Name="Рост" Type="Int32" />
+          <Property Name="Вес" Type="Int32" />
+          <Property Name="Амплуа" Type="Int32" />
+          <Property Name="Номер" Type="Int32" />
+          <Property Name="Приоритет_способностей" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TacticPoint">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="Определитель" Type="Int32" />
+          <Property Name="Точка" Type="Int32" />
+          <Property Name="Номер" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TacticPointLocation">
+          <Key>
+            <PropertyRef Name="Код" />
+          </Key>
+          <Property Name="Код" Type="Int32" Nullable="false" />
+          <Property Name="X" Type="Int32" />
+          <Property Name="Y" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TypeOfInjury">
+          <Key>
+            <PropertyRef Name="Только_при_игре" />
+          </Key>
+          <Property Name="Код" Type="Int32" />
+          <Property Name="Тип" Type="String" MaxLength="31" Unicode="true" FixedLength="false" />
+          <Property Name="Минимум_дней" Type="Int32" />
+          <Property Name="Максимум_дней" Type="Int32" />
+          <Property Name="Только_при_игре" Type="Boolean" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="WpfDBModelStoreContainer" CdmEntityContainer="WpfDBEntities">
+          <EntitySetMapping Name="Ampluas"><EntityTypeMapping TypeName="WpfDBModel.Amplua"><MappingFragment StoreEntitySet="Amplua">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Амплуа" ColumnName="Амплуа" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Championships"><EntityTypeMapping TypeName="WpfDBModel.Championship"><MappingFragment StoreEntitySet="Championship">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Название" ColumnName="Название" />
+            <ScalarProperty Name="Страна" ColumnName="Страна" />
+            <ScalarProperty Name="Тип" ColumnName="Тип" />
+            <ScalarProperty Name="Клубов" ColumnName="Клубов" />
+            <ScalarProperty Name="Репутация" ColumnName="Репутация" />
+            <ScalarProperty Name="Активирован" ColumnName="Активирован" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ClubHistories"><EntityTypeMapping TypeName="WpfDBModel.ClubHistory"><MappingFragment StoreEntitySet="ClubHistory">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Клуб" ColumnName="Клуб" />
+            <ScalarProperty Name="Сезон" ColumnName="Сезон" />
+            <ScalarProperty Name="Дивизион" ColumnName="Дивизион" />
+            <ScalarProperty Name="Игры" ColumnName="Игры" />
+            <ScalarProperty Name="Выигрыши" ColumnName="Выигрыши" />
+            <ScalarProperty Name="Ничьи" ColumnName="Ничьи" />
+            <ScalarProperty Name="Поражения" ColumnName="Поражения" />
+            <ScalarProperty Name="Очки" ColumnName="Очки" />
+            <ScalarProperty Name="Голы" ColumnName="Голы" />
+            <ScalarProperty Name="Пропущенные_мячи" ColumnName="Пропущенные мячи" />
+            <ScalarProperty Name="Позиция" ColumnName="Позиция" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ClubPopularities"><EntityTypeMapping TypeName="WpfDBModel.ClubPopularity"><MappingFragment StoreEntitySet="ClubPopularity">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Регион" ColumnName="Регион" />
+            <ScalarProperty Name="Клуб" ColumnName="Клуб" />
+            <ScalarProperty Name="Популярность" ColumnName="Популярность" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Countries"><EntityTypeMapping TypeName="WpfDBModel.Country"><MappingFragment StoreEntitySet="Country">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Страна" ColumnName="Страна" />
+            <ScalarProperty Name="Репутация" ColumnName="Репутация" />
+            <ScalarProperty Name="Цвет1" ColumnName="Цвет1" />
+            <ScalarProperty Name="Цвет2" ColumnName="Цвет2" />
+            <ScalarProperty Name="Активирован" ColumnName="Активирован" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameDatas"><EntityTypeMapping TypeName="WpfDBModel.GameData"><MappingFragment StoreEntitySet="GameData">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Дата" ColumnName="Дата" />
+            <ScalarProperty Name="Уровень_сложности" ColumnName="Уровень сложности" />
+            <ScalarProperty Name="Персона" ColumnName="Персона" />
+            <ScalarProperty Name="Тактика" ColumnName="Тактика" />
+            <ScalarProperty Name="Тренер_вратарей" ColumnName="Тренер вратарей" />
+            <ScalarProperty Name="Тренер_защитников" ColumnName="Тренер защитников" />
+            <ScalarProperty Name="Тренер_полузащитников" ColumnName="Тренер полузащитников" />
+            <ScalarProperty Name="Тренер_нападающих" ColumnName="Тренер нападающих" />
+            <ScalarProperty Name="Тренер_по_физподготовке" ColumnName="Тренер по физподготовке" />
+            <ScalarProperty Name="Скаут" ColumnName="Скаут" />
+            <ScalarProperty Name="Физиотерапефт" ColumnName="Физиотерапефт" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Injuries"><EntityTypeMapping TypeName="WpfDBModel.Injury"><MappingFragment StoreEntitySet="Injury">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Игрок" ColumnName="Игрок" />
+            <ScalarProperty Name="Тип" ColumnName="Тип" />
+            <ScalarProperty Name="Восстановление" ColumnName="Восстановление" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Interests"><EntityTypeMapping TypeName="WpfDBModel.Interest"><MappingFragment StoreEntitySet="Interest">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Клуб" ColumnName="Клуб" />
+            <ScalarProperty Name="Покупка_Аренда" ColumnName="Покупка\Аренда" />
+            <ScalarProperty Name="Уровень" ColumnName="Уровень" />
+            <ScalarProperty Name="Предложание_сделано" ColumnName="Предложание сделано" />
+            <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="People"><EntityTypeMapping TypeName="WpfDBModel.Person"><MappingFragment StoreEntitySet="Person">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+            <ScalarProperty Name="Имя" ColumnName="Имя" />
+            <ScalarProperty Name="Работа" ColumnName="Работа" />
+            <ScalarProperty Name="Клуб" ColumnName="Клуб" />
+            <ScalarProperty Name="ДР" ColumnName="ДР" />
+            <ScalarProperty Name="Страна1" ColumnName="Страна1" />
+            <ScalarProperty Name="Страна2" ColumnName="Страна2" />
+            <ScalarProperty Name="Репутация" ColumnName="Репутация" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PlayedMatchesOfPlayers"><EntityTypeMapping TypeName="WpfDBModel.PlayedMatchesOfPlayer"><MappingFragment StoreEntitySet="PlayedMatchesOfPlayer">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Игрок" ColumnName="Игрок" />
+            <ScalarProperty Name="Матч" ColumnName="Матч" />
+            <ScalarProperty Name="Сторона" ColumnName="Сторона" />
+            <ScalarProperty Name="Голы" ColumnName="Голы" />
+            <ScalarProperty Name="Гол_передачи" ColumnName="Гол передачи" />
+            <ScalarProperty Name="ЖК" ColumnName="ЖК" />
+            <ScalarProperty Name="КК" ColumnName="КК" />
+            <ScalarProperty Name="Минуты" ColumnName="Минуты" />
+            <ScalarProperty Name="Оценка" ColumnName="Оценка" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PlayerInfoes"><EntityTypeMapping TypeName="WpfDBModel.PlayerInfo"><MappingFragment StoreEntitySet="PlayerInfo">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Клуб__аренда_" ColumnName="Клуб (аренда)" />
+            <ScalarProperty Name="Рост" ColumnName="Рост" />
+            <ScalarProperty Name="Вес" ColumnName="Вес" />
+            <ScalarProperty Name="Амплуа" ColumnName="Амплуа" />
+            <ScalarProperty Name="Номер" ColumnName="Номер" />
+            <ScalarProperty Name="Приоритет_способностей" ColumnName="Приоритет способностей" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TacticPoints"><EntityTypeMapping TypeName="WpfDBModel.TacticPoint"><MappingFragment StoreEntitySet="TacticPoint">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Определитель" ColumnName="Определитель" />
+            <ScalarProperty Name="Точка" ColumnName="Точка" />
+            <ScalarProperty Name="Номер" ColumnName="Номер" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TacticPointLocations"><EntityTypeMapping TypeName="WpfDBModel.TacticPointLocation"><MappingFragment StoreEntitySet="TacticPointLocation">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="X" ColumnName="X" />
+            <ScalarProperty Name="Y" ColumnName="Y" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TypeOfInjuries"><EntityTypeMapping TypeName="WpfDBModel.TypeOfInjury"><MappingFragment StoreEntitySet="TypeOfInjury">
+            <ScalarProperty Name="Код" ColumnName="Код" />
+            <ScalarProperty Name="Тип" ColumnName="Тип" />
+            <ScalarProperty Name="Минимум_дней" ColumnName="Минимум дней" />
+            <ScalarProperty Name="Максимум_дней" ColumnName="Максимум дней" />
+            <ScalarProperty Name="Только_при_игре" ColumnName="Только при игре" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="WpfDBModel.Amplua" Width="1.5" PointX="0.75" PointY="0.75" Height="1.2205309810241065" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.Championship" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9991869620482135" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.ClubHistory" Width="1.5" PointX="0.75" PointY="3.75" Height="2.7778429430723186" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.ClubPopularity" Width="1.5" PointX="2.75" PointY="3.75" Height="1.5319933734337479" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.Country" Width="1.5" PointX="4.75" PointY="0.75" Height="1.843455765843391" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.GameData" Width="1.5" PointX="4.75" PointY="3.75" Height="2.7778429430723186" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.Injury" Width="1.5" PointX="6.75" PointY="0.75" Height="1.5319933734337496" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.Interest" Width="1.5" PointX="6.75" PointY="3.75" Height="1.843455765843391" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.Person" Width="1.5" PointX="6.75" PointY="6.75" Height="2.3106493544578548" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.PlayedMatchesOfPlayer" Width="1.5" PointX="0.75" PointY="7.75" Height="2.4663805506626773" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.PlayerInfo" Width="1.5" PointX="2.75" PointY="7.75" Height="1.9991869620482135" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.TacticPoint" Width="1.5" PointX="8.75" PointY="0.75" Height="1.5319933734337496" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.TacticPointLocation" Width="1.5" PointX="8.75" PointY="3.75" Height="1.3762621772289307" IsExpanded="true" />
+        <EntityTypeShape EntityType="WpfDBModel.TypeOfInjury" Width="1.5" PointX="8.75" PointY="6.75" Height="1.6877245696385756" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

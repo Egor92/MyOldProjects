@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "ClassLibrary1\Bank.csproj", "{34F25699-352B-44BE-8F86-98F8CA2BB7EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTests", "BankTests\BankTests.csproj", "{001FDC29-CB93-4CE1-8EBD-D58D3485D2C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34F25699-352B-44BE-8F86-98F8CA2BB7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F25699-352B-44BE-8F86-98F8CA2BB7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F25699-352B-44BE-8F86-98F8CA2BB7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F25699-352B-44BE-8F86-98F8CA2BB7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001FDC29-CB93-4CE1-8EBD-D58D3485D2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001FDC29-CB93-4CE1-8EBD-D58D3485D2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001FDC29-CB93-4CE1-8EBD-D58D3485D2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001FDC29-CB93-4CE1-8EBD-D58D3485D2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

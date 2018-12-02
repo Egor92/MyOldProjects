@@ -1,0 +1,41 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+    x:Class="Volga_NN_Gamer_2011.PlayerPage"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d" KeepAlive="True"
+    d:DesignHeight="300" d:DesignWidth="300"
+    Title="PlayerPage">
+    <Grid>
+        <StackPanel Name="PlayerInfo">
+            <TextBlock>Имя: <Run Text="{Binding Path=Info.Name}"></Run></TextBlock>
+            <TextBlock>Фамилия: <Run Text="{Binding Path=Info.Surname, Mode=OneWay}"></Run></TextBlock>
+            
+            <TextBlock>Клуб:
+                <Hyperlink Name="LinkToClub" Click="Hyperlink_Click">
+                <Run Text="{Binding Path=Info.Club.FullName, Mode=OneWay}" />
+                </Hyperlink>
+            </TextBlock>
+            
+            <TextBlock>Страна 1:
+                <Hyperlink Name="LinkToFirstCountry" Click="LinkToFirstCountry_Click">
+                <Run Text="{Binding Path=Info.FirstNation.Name, Mode=OneWay}" />
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock>Страна 2:
+                <Hyperlink Name="LinkToSecondCountry" Click="LinkToSecondCountry_Click">
+                <Run Text="{Binding Path=Info.SecondNation.Name, Mode=OneWay}" />
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock>Рост: <Run Text="{Binding Path=Info.Height, Mode=OneWay}"></Run></TextBlock>
+            <TextBlock>Вес: <Run Text="{Binding Path=Info.Weight, Mode=OneWay}"></Run></TextBlock>
+            <TextBlock>Стадион: <Run Text="{Binding Path=Info.Club.Stadium.Name, Mode=OneWay}"></Run></TextBlock>
+            <TextBlock>Код: <Run Text="{Binding Path=Code, Mode=OneWay}"></Run></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Page>

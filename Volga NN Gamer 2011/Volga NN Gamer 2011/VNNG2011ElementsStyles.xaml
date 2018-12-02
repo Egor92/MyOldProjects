@@ -1,0 +1,151 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:VNNG2011="clr-namespace:VNNG2011;assembly=DataBaseAccess" xmlns:d="http://schemas.microsoft.com/expression/" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d1="http://schemas.microsoft.com/expression/blend/2008" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" mc:Ignorable="d d1">
+	<!-- Resource dictionary entries should be defined here. -->
+ 
+	<Style x:Key="SelectedItemMustBeWhite" TargetType="{x:Type ListViewItem}">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ListViewItem}">
+					<Grid>
+						<ContentPresenter/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+ 
+	<Style TargetType="{x:Type Hyperlink}">
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="TextDecorations" Value="None"/>
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="true">
+				<Setter Property="TextDecorations" Value="Underline"/>
+			</Trigger>
+			<Trigger Property="IsMouseOver" Value="false">
+				<Setter Property="TextDecorations" Value="None"/>
+			</Trigger>
+		</Style.Triggers>
+	</Style>
+
+	<Style x:Key="UpLevelHyperlinkStyle" TargetType="{x:Type Hyperlink}">  
+		<Setter Property="TextDecorations" Value="None"/>
+		
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="TextDecorations" Value="Underline"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="false">
+                <Setter Property="TextDecorations" Value="None"/>
+            </Trigger>
+        </Style.Triggers>
+	</Style>
+
+
+	<ControlTemplate x:Key="ArrowToLeftStyle" TargetType="{x:Type Button}">
+		<Grid>
+			<Path Width="Auto" Height="Auto" Canvas.Left="98.0482" Canvas.Top="355.016" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FFFFFFFF" Data="F1 M 99.501,399.499L 143.484,355.516L 143.484,379.581L 199.586,379.581L 199.586,419.707L 143.563,419.707L 143.563,444.516L 98.5482,399.502L 99.501,399.499 Z " Margin="0"/>
+		</Grid>
+	</ControlTemplate>
+	
+	<ControlTemplate x:Key="ArrowToRightStyle" TargetType="{x:Type Button}">
+		<Grid>
+			<Path Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FFFFFFFF" Data="F1 M 198.633,400.534L 199.586,400.531L 154.571,355.516L 154.571,380.325L 98.5481,380.325L 98.5481,420.452L 154.65,420.452L 154.65,444.516L 198.633,400.534 Z " HorizontalAlignment="Stretch" Height="Auto" Margin="0" VerticalAlignment="Stretch" Width="Auto"/>
+		</Grid>
+		
+		<ControlTemplate.Triggers>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Shape.Fill" Value="#FFFF4800"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="false">
+                <Setter Property="Shape.Fill" Value="#FF000000"/>
+            </Trigger>
+		</ControlTemplate.Triggers>
+	</ControlTemplate>
+	<Style x:Key="ButtonFocusVisual">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate>
+					<Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#F3F3F3" Offset="0"/>
+		<GradientStop Color="#EBEBEB" Offset="0.5"/>
+		<GradientStop Color="#DDDDDD" Offset="0.5"/>
+		<GradientStop Color="#CDCDCD" Offset="1"/>
+	</LinearGradientBrush>
+	<SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>
+	
+	
+	
+	<Style x:Key="LightingAndBorderStyle" TargetType="{x:Type Button}">
+		<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
+		<Setter Property="BorderThickness" Value="4"/>
+		<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="Padding" Value="1"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+						<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true">
+							<Setter Property="Background">
+								<Setter.Value>
+	                				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+	                					<GradientStop Color="#FFF3F3F3" Offset="0"/>
+	                					<GradientStop Color="Red" Offset="1"/>
+	                				</LinearGradientBrush>
+								</Setter.Value>
+							</Setter>
+						</Trigger>
+						<Trigger Property="IsMouseOver" Value="false">
+							<Setter Property="Background">
+								<Setter.Value>
+	                				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+	                					<GradientStop Color="#FF000000" Offset="0"/>
+	                					<GradientStop Color="Red" Offset="1"/>
+	                				</LinearGradientBrush>
+								</Setter.Value>
+							</Setter>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+	<DataTemplate x:Key="HistoryOfClubDataStyle">
+		<DockPanel>
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Season, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="250" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=ChampionshipName, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Wins, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Drawns, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Loses, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Goals, Mode=OneWay}"/>-
+				<Run Text="{Binding Path=PassedBalls, Mode=OneWay}"/>
+			</TextBlock>	
+			<TextBlock Margin="1" Width="57" Height="14" VerticalAlignment="Center" DockPanel.Dock="Left">
+				<Run Text="{Binding Path=Position, Mode=OneWay}"/>
+			</TextBlock>	
+		</DockPanel>
+	</DataTemplate>
+	
+	
+	
+</ResourceDictionary>

@@ -1,0 +1,73 @@
+﻿<Window
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" x:Class="Volga_NN_Gamer_2011.MainWindow"
+		Title="Volga NN Gamer 2011" MinHeight="480" MinWidth="640">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25"/>
+			<RowDefinition Height="80"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid x:Name="TopLine" Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="80"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Image Name="Logotype" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" RenderTransformOrigin="0.5,0.5">
+			</Image>
+			<Grid Grid.Column="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="30"/>
+				</Grid.RowDefinitions>
+				<TextBlock x:Name="ThisLevel_TextBlock" FontSize="24" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" Text="1"/>
+				<TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" FontWeight="Bold">
+					<Hyperlink x:Name="UpLevel_TextBlock" Style="{DynamicResource UpLevelHyperlinkStyle}">
+						Club (Championship)
+					</Hyperlink>
+				</TextBlock>
+			</Grid>
+		</Grid>
+		<Grid Margin="0,0,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="100"/>
+			</Grid.ColumnDefinitions>
+			<StackPanel Orientation="Horizontal">
+				<Button Content="Назад" Margin="1,1,0,1" Width="75" Command="NavigationCommands.BrowseBack" />
+				<Button Content="Вперёд" Margin="1,1,0,1" Width="75" Command="NavigationCommands.BrowseForward" />
+				<Canvas Height="Auto" Width="100">
+					<Expander x:Name="ManagerExp" Header="Manager" Height="Auto" Width="Auto">
+						<ListBox Width="100">
+							<ListBoxItem Height="20" Content="Office"/>
+							<ListBoxItem Height="20" Content="Go out"/>
+							<ListBoxItem Height="20" Content="Carear"/>
+						</ListBox>
+					</Expander>
+				</Canvas>
+				<Canvas Height="Auto" Width="100">
+					<Expander x:Name="ClubExp" Header="Club" Height="Auto" Width="Auto">
+						<ListBox Width="100">
+							<ListBoxItem Height="20" Content="Состав"/>
+							<ListBoxItem Height="20" Content="Тактика"/>
+							<ListBoxItem Height="20" Content="Стадион"/>
+						</ListBox>
+					</Expander>
+				</Canvas>
+				<Canvas Height="Auto" Width="100">
+					<Expander x:Name="ChampionshipExp" Header="Championship" Height="Auto" Width="Auto">
+						<ListBox Width="100">
+							<ListBoxItem Height="20" Content="Таблица"/>
+							<ListBoxItem Height="20" Content="Статистика"/>
+							<ListBoxItem Height="20" Content="Ещё чего-нибудь"/>
+						</ListBox>
+					</Expander>
+				</Canvas>
+			</StackPanel>
+		</Grid>
+		<Frame x:Name="frame" Grid.Row="2" Source="Pages\ClubPage.xaml" Navigated="Frame_Navigated" />
+	</Grid>
+</Window>

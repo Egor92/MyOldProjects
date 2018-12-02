@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VNNG2011.Player" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAACAAAAgAAAAAAAAAQAAAoAQAEAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Club" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABSAAAAAgAAAAIIIAACgAAAAAAAgAMgAIGCBgAEAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.City" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAAAAAAAAAgBAQAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Championship" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAgBAQAAAIAAAAAAQQAAAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Stadium" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAgBAQCAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Match" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAgAEAAAAQlAAABAAAMAAIAAAg=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Info" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAAAQAAAAAAAAAQIBAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.PlayerInfo" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAEAgAAAAACIAAAAAQAEAAAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.TechAttr" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAQAAAAAAAACAAAAAAEAgAAAAgAEAAAAQAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.MentalAttr" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAQAAAAACAAAAACAgAAAIgAgABAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.PhysicalAttr" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAgAAAABAAAAAAABAAAEYAAAIAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.GKAttr" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAEAAAAAAAgACAAAAAACAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.PlayedMath" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAASBAgAIAAAAAABAAAAACAAQAAYAE=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Colors" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.ClubHistory" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQIAAAAgAAAAACAAAgAAAQAAAACEAAAAIAA=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.DataBase">
+    <Position X="0.5" Y="2.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>5BwAI+AwiExqp4AqEhMQgzYcAIgNK1RA2AgiDBBAZQA=</HashCode>
+      <FileName>DataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.db" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OIFsHqCo086AHFJZTGuSabCXWUtiSVgQmPrkhIeJzFk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.AbilityPriorityTableAdapter" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.AmpluaTableAdapter" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.AttributesTableAdapter" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.ChampionshipTableAdapter" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.CityTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.ClubTableAdapter" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.ClubHistoryTableAdapter" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.ClubPopularityTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.CoachInfoTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.CountryTableAdapter" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.GameDataTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.InjuryTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.InterestTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.JobTableAdapter" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.KitColorTableAdapter" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.MatchTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.PersonTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.PlayedMatchesOfPlayerTableAdapter" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.PlayerInfoTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.PriceValueTableAdapter" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.RefereeInfoTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.RegionTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.StadiumTableAdapter" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TacticOfLineTableAdapter" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TotalTacticTableAdapter" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TrainingTableAdapter" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TransferTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TypeOfChampTableAdapter" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TypeOfInjuryTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TacticPointTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TacticPointLocationTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.dbTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DYAggDgETEBIRhFBAAAEMNCwbAwSgIwAYAUaypgAxIU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VNNG2011.Properties.Settings" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="VNNG2011.Amplua" Collapsed="true">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAIAAIAAABAAAAABAAAACAQAEAAAEAAAAAAAAQ=</HashCode>
+      <FileName>ClassData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft Sans Serif" Size="8.25" />
+</ClassDiagram>
