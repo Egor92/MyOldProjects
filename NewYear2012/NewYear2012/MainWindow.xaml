@@ -1,0 +1,16 @@
+﻿<Window x:Class="NewYear2012.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Загадки от Дедушки Мороза." Height="413" Width="567" WindowStartupLocation="CenterScreen">
+	<Window.Background>
+		<ImageBrush ImageSource="Background.jpg" Opacity="0.695"/>
+	</Window.Background>
+    <StackPanel Loaded="StackPanel_Loaded">
+        <Label Height="40" Margin="12,12,12,0" Name="QuestionNumber" VerticalAlignment="Top" />
+        <Label Height="200" Margin="12,12,12,0" Name="QuestionText" VerticalAlignment="Top" />
+        <Label Height="Auto" Margin="12,12,12,0" Name="Status" VerticalAlignment="Top" />
+        <TextBox Height="23" Margin="12,12,12,0" Name="AnswerText" />
+        <Button Content="Ответить" Height="23" Margin="12,12,12,0" Name="AnswerButton" Width="100" Click="AnswerButton_Click" />
+        <MediaElement Height="5" Width="5" Visibility="Hidden" Source="Jingle bells.mp3" />
+    </StackPanel>
+</Window>

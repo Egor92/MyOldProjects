@@ -1,0 +1,170 @@
+﻿<Window x:Class="FunWithDataTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:FunWithDataTemplate"
+		xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        Title="MainWindow" Height="350" Width="525">
+	<Window.Resources>
+		<DataTemplate DataType="{x:Type local:BaseObject}">
+			<Grid Background="White" >
+				<TextBox Text="{Binding Path=Text, Mode=OneTime}"
+						 HorizontalAlignment="Left"
+						 FontWeight="Bold"
+						 FontSize="22"
+						 Margin="5" 
+						 BorderThickness="0"
+						 Background="Transparent"/>
+				<TextBlock Text="Base object" 
+						   HorizontalAlignment="Left"
+						   VerticalAlignment="Bottom" 
+						   FontSize="8"/>
+			</Grid>
+		</DataTemplate>
+		<DataTemplate DataType="{x:Type local:RedObject}">
+			<Grid Background="{Binding Path=Background, Mode=OneTime}" >
+				<TextBox Foreground="{Binding Path=Foreground, Mode=OneTime}"
+						 Text="{Binding Path=Text, Mode=OneTime}"
+						 HorizontalAlignment="Left"
+						 FontWeight="Bold"
+						 FontSize="22"
+						 Margin="5"
+						 BorderThickness="0"
+						 Background="Transparent"/>
+				<TextBlock Text="Red object" 
+						   HorizontalAlignment="Left"
+						   VerticalAlignment="Bottom" 
+						   FontSize="8" />
+			</Grid>
+		</DataTemplate>
+		<DataTemplate DataType="{x:Type local:GreenObject}">
+			<Grid Background="{Binding Path=Background, Mode=OneTime}">
+				<TextBox Foreground="{Binding Path=Foreground, Mode=OneTime}"
+						 Text="{Binding Path=Text, Mode=OneTime}"
+						 HorizontalAlignment="Left"
+						 FontSize="26"
+						 Margin="5" 
+						 FontStyle="Italic"
+						 BorderThickness="0"
+						 Background="Transparent"/>
+				<TextBlock Text="Green object" 
+						   HorizontalAlignment="Left"
+						   VerticalAlignment="Bottom" 
+						   FontSize="8" />
+			</Grid>
+		</DataTemplate>
+		<DataTemplate DataType="{x:Type local:BlueObject}">
+			<Grid Background="{Binding Path=Background, Mode=OneTime}">
+				<TextBox Foreground="{Binding Path=Foreground, Mode=OneTime}"
+						 Text="{Binding Path=Text, Mode=OneTime}"
+						 HorizontalAlignment="Left"
+						 FontSize="18"
+						 Margin="5" 
+						 TextDecorations="Underline" 
+						 BorderThickness="0"
+						 Background="Transparent"/>
+				<TextBlock Text="Blue object" 
+						   HorizontalAlignment="Left"
+						   VerticalAlignment="Bottom" 
+						   FontSize="8" />
+			</Grid>
+		</DataTemplate>
+		<DataTemplate x:Key="StrictTemplate" DataType="{x:Type local:Person}">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="0" Grid.Column="0" Text="First name:"/>
+				<TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=FirstName, Mode=TwoWay}"/>
+				<TextBlock Grid.Row="1" Grid.Column="0" Text="Last name:"/>
+				<TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=LastName, Mode=TwoWay}"/>
+				<TextBlock Grid.Row="2" Grid.Column="0" Text="Age:"/>
+				<toolkit:IntegerUpDown Grid.Row="2" Grid.Column="1" Text="{Binding Path=Age, Mode=TwoWay}"/>
+			</Grid>
+		</DataTemplate>
+		<DataTemplate x:Key="BrightTemplate" DataType="{x:Type local:Person}">
+			<Border BorderBrush="Black" BorderThickness="2" CornerRadius="3" >
+				<Border.Background>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#BA129C" Offset="0"/>
+						<GradientStop Color="#1812B4" Offset="1"/>
+					</LinearGradientBrush>
+				</Border.Background>
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<TextBlock Grid.Row="0" Grid.Column="0" Text="First name:" Foreground="White" FontWeight="Bold"/>
+					<TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=FirstName, Mode=TwoWay}" FontWeight="Bold"/>
+					<TextBlock Grid.Row="1" Grid.Column="0" Text="Last name:" Foreground="White"/>
+					<TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=LastName, Mode=TwoWay}"/>
+					<TextBlock Grid.Row="2" Grid.Column="0" Text="Age:" Foreground="White" FontWeight="Bold"/>
+					<toolkit:IntegerUpDown Grid.Row="2" Grid.Column="1" Text="{Binding Path=Age, Mode=TwoWay}"/>
+				</Grid>
+			</Border>
+		</DataTemplate>
+		<local:CustomTemplateSelector x:Key="CustomTemplateSelector" />
+	</Window.Resources>
+	
+	
+	
+	
+	<TabControl>
+		<TabItem Header="Item 1">
+			<ListBox HorizontalContentAlignment="Stretch">
+				<ListBox.Items>
+					<local:BlackObject />
+					<local:DarkRedObject />
+					<local:OrangeRedObject />
+					<local:RedObject />
+					<local:BlueObject Text="I'm blue" />
+					<local:RedObject />
+					<local:GreenObject />
+					<local:RedObject Text="adfgsfgsf" />
+				</ListBox.Items>
+			</ListBox>
+		</TabItem>
+		
+		<TabItem Header="Item 2">
+			<ListBox HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource CustomTemplateSelector}">
+				<ListBox.Items>
+					<local:Person TemplateType="Strict" 
+								  FirstName="Homer" 
+								  LastName="Simpson" 
+								  Age="45" />
+					<local:Person TemplateType="Strict" 
+								  FirstName="Magister Yoda" 
+								  LastName="" 
+								  Age="865" />
+					<local:Person TemplateType="Bright" 
+								  FirstName="Dart Wader" 
+								  LastName="" 
+								  Age="54" />
+					<local:Person TemplateType="Strict" 
+								  FirstName="Anton" 
+								  LastName="Khazov" 
+								  Age="33" />
+					<local:Person TemplateType="Bright" 
+								  FirstName="Jamal" 
+								  LastName="Malik" 
+								  Age="21" />
+					<local:Person TemplateType="Bright" 
+								  FirstName="Humberto" 
+								  LastName="Alonso Gutterez" 
+								  Age="20" />
+				</ListBox.Items>
+			</ListBox>
+		</TabItem>
+	</TabControl>
+</Window>

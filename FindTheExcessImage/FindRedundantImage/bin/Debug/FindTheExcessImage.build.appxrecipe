@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ASUS-K53SV-EGOR</Machine>
+    <WindowsUser>Egor</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>53430TrumpSoftware.14461AE7C5DF9</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\FindTheExcessImage.exe">
+      <PackagePath>FindTheExcessImage.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\Callisto.1.3.1\lib\winrt45\Callisto.dll">
+      <PackagePath>Callisto.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\PortableClassLibrary\bin\Debug\PortableClassLibrary.dll">
+      <PackagePath>PortableClassLibrary.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Assets\Background.jpg">
+      <PackagePath>Assets\Background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\ar\ar.words.txt">
+      <PackagePath>Resources\ar\ar.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\bg\bg.words.txt">
+      <PackagePath>Resources\bg\bg.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\cs\cs.words.txt">
+      <PackagePath>Resources\cs\cs.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\da\da.words.txt">
+      <PackagePath>Resources\da\da.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\de\de.words.txt">
+      <PackagePath>Resources\de\de.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\el\el.words.txt">
+      <PackagePath>Resources\el\el.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\en\en.words.txt">
+      <PackagePath>Resources\en\en.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\es\es.words.txt">
+      <PackagePath>Resources\es\es.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\et\et.words.txt">
+      <PackagePath>Resources\et\et.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\fi\fi.words.txt">
+      <PackagePath>Resources\fi\fi.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\fr\fr.words.txt">
+      <PackagePath>Resources\fr\fr.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\he\he.words.txt">
+      <PackagePath>Resources\he\he.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\hr\hr.words.txt">
+      <PackagePath>Resources\hr\hr.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\hu\hu.words.txt">
+      <PackagePath>Resources\hu\hu.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\id\id.words.txt">
+      <PackagePath>Resources\id\id.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\it\it.words.txt">
+      <PackagePath>Resources\it\it.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\ja\ja.words.txt">
+      <PackagePath>Resources\ja\ja.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\ko\ko.words.txt">
+      <PackagePath>Resources\ko\ko.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\lt\lt.words.txt">
+      <PackagePath>Resources\lt\lt.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\lv\lv.words.txt">
+      <PackagePath>Resources\lv\lv.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\nb\nb.words.txt">
+      <PackagePath>Resources\nb\nb.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\nl\nl.words.txt">
+      <PackagePath>Resources\nl\nl.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\pl\pl.words.txt">
+      <PackagePath>Resources\pl\pl.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\pt\pt.words.txt">
+      <PackagePath>Resources\pt\pt.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\ru\ru.words.txt">
+      <PackagePath>Resources\ru\ru.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\sk\sk.words.txt">
+      <PackagePath>Resources\sk\sk.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\sl\sl.words.txt">
+      <PackagePath>Resources\sl\sl.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\tr\tr.words.txt">
+      <PackagePath>Resources\tr\tr.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\uk\uk.words.txt">
+      <PackagePath>Resources\uk\uk.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\zh-cn\zh-cn.words.txt">
+      <PackagePath>Resources\zh-cn\zh-cn.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\Resources\zh-tw\zh-tw.words.txt">
+      <PackagePath>Resources\zh-tw\zh-tw.words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\Views\ExtendedSplash.xaml">
+      <PackagePath>Views\ExtendedSplash.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\Views\MainPage.xaml">
+      <PackagePath>Views\MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\Views\NoConnectionPage.xaml">
+      <PackagePath>Views\NoConnectionPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\Callisto.1.3.1\lib\winrt45\Callisto\themes\Generic.xaml">
+      <PackagePath>Callisto\themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\AnimatingContainer.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\AnimatingContainer.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CascadingTextBlock.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CascadingTextBlock.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CountdownControl.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CountdownControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\ImageButton\ImageButton.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\ImageButton\ImageButton.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\InputDialog\InputDialog.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\InputDialog\InputDialog.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\TreeView\TreeView.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeView.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xaml">
+      <PackagePath>WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\packages\WinRTXamlToolkit.1.5.4.2\lib\netcore45\WinRTXamlToolkit\Themes\Generic.xaml">
+      <PackagePath>WinRTXamlToolkit\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Егор\Проекты\FindTheExcessImage\FindRedundantImage\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

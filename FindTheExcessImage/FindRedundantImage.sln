@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheExcessImage", "FindRedundantImage\FindTheExcessImage.csproj", "{9EE0E398-D4DD-40BA-8A35-594241A50A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsTranslaterApplication", "WordsTranslaterApplication\WordsTranslaterApplication.csproj", "{D63061EA-B621-4112-80EF-08E0A74A34AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableClassLibrary", "PortableClassLibrary\PortableClassLibrary.csproj", "{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://trumpsoftware.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WordsTranslaterApplication\\WordsTranslaterApplication.csproj
+		SccProjectName1 = WordsTranslaterApplication
+		SccLocalPath1 = WordsTranslaterApplication
+		SccProjectUniqueName2 = PortableClassLibrary\\PortableClassLibrary.csproj
+		SccProjectName2 = PortableClassLibrary
+		SccLocalPath2 = PortableClassLibrary
+		SccProjectUniqueName3 = FindRedundantImage\\FindTheExcessImage.csproj
+		SccProjectName3 = FindRedundantImage
+		SccLocalPath3 = FindRedundantImage
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|ARM.ActiveCfg = Debug|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|ARM.Build.0 = Debug|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|ARM.Deploy.0 = Debug|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x64.ActiveCfg = Debug|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x64.Build.0 = Debug|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x64.Deploy.0 = Debug|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x86.ActiveCfg = Debug|x86
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x86.Build.0 = Debug|x86
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Debug|x86.Deploy.0 = Debug|x86
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|ARM.ActiveCfg = Release|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|ARM.Build.0 = Release|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|ARM.Deploy.0 = Release|ARM
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x64.ActiveCfg = Release|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x64.Build.0 = Release|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x64.Deploy.0 = Release|x64
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x86.ActiveCfg = Release|x86
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x86.Build.0 = Release|x86
+		{9EE0E398-D4DD-40BA-8A35-594241A50A30}.Release|x86.Deploy.0 = Release|x86
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Release|x64.ActiveCfg = Release|Any CPU
+		{D63061EA-B621-4112-80EF-08E0A74A34AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B7A38C7-14D6-4F36-ADF1-2128BABDA9C7}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

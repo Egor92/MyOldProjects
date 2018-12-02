@@ -1,0 +1,142 @@
+snow;salju
+war;perang
+thaw;mencair
+freezing;pembekuan
+summer;musim panas
+winter;musim dingin
+autumn;musim gugur
+spring;musim semi
+ice cream;es krim
+hotel;hotel
+soil;tanah
+vegetable;sayuran
+machine;mesin
+sea;laut
+book;buku
+beard;jenggot
+Jupiter;Jupiter
+sword;pedang
+difficulty;kesulitan
+light;cahaya
+cuirass;lapisan baja
+folder;map
+rum;rum
+juice;jus
+pirate;bajak laut
+dill;dil
+painter;pelukis
+red;merah
+green;hijau
+blue;biru
+black;hitam
+white;putih
+yellow;kuning
+rhombus;belah ketupat
+triangle;segi tiga
+square;persegi
+plate;piring
+language;bahasa
+circle;lingkaran
+goal;tujuan
+Injun;Injun
+collection;koleksi
+mobilization;mobilisasi
+smoked;diasap
+party;partai
+titanium;titanium
+destabilization;destabilisasi
+tenderness;kelembutan
+youth;pemuda
+cheerful;riang
+candy;permen
+mandarin;jeruk keprok
+lead;memimpin
+screen;layar
+burger;burger
+button;tombol
+bell;bel
+sadness;kesedihan
+sound;suara
+meditation;meditasi
+conservation;konservasi
+liberalization;liberalisasi
+exam;ujian
+degradation;degradasi
+error;kesalahan
+search;mencari
+socket;stopkontak
+bar;bar
+vulture;burung bangkai
+watch;menonton
+window;jendela
+lantern;lentera
+trash;sampah
+football;sepak bola
+hockey;hoki
+basketball;bola basket
+volleyball;bola voli
+rugby;ragbi
+billiards;bilyar
+Titanic;Raksasa
+dynamic;dinamis
+device;alat
+print;mencetak
+fraction;pecahan
+cookery;seni memasak
+office;kantor
+Caesar;Kaisar
+up;naik
+running;berjalan
+sneeze;bersin
+kick;menendang
+bawl;teriak
+operator;operator
+nose;hidung
+boxing;tinju
+horseradish;lobak pedas
+accordion;akordeon
+grill;panggangan
+urn;pasu
+chew;mengunyah
+cat;kucing
+code;kode
+music;musik
+flower;bunga
+coloring;warna
+hardcore;hardcore
+happiness;kebahagiaan
+smile;tersenyum
+smirk;menyeringai
+souffle;souffle
+charging;pengisian
+discharge;melepaskan
+optics;optik
+hallucination;khayalan
+translation;terjemahan
+flow;aliran
+bucket;ember
+sing;menyanyi
+angle;sudut
+wall;dinding
+side;sisi
+wind;angin
+thunder;guntur
+background;latar belakang
+good;baik
+money;uang
+apple;apel
+mouse;mouse
+electronic;elektronik
+sms;sms
+pipe;pipa
+bicycle;sepeda
+space;ruang
+decline;menurun
+newspaper;koran
+movie;film
+glass;kaca
+whisper;berbisik
+mountain;gunung
+dessert;pencuci mulut
+haircut;potong rambut
+rotation;rotasi

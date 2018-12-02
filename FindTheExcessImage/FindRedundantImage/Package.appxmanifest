@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="53430TrumpSoftware.14461AE7C5DF9" Publisher="CN=79D2A269-BB36-4024-969A-8C23BC6BD624" Version="2.0.0.1" />
+  <Properties>
+    <DisplayName>ms-resource:AppName</DisplayName>
+    <PublisherDisplayName>Trump Software</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FindTheExcessImage.App">
+      <VisualElements DisplayName="ms-resource:AppName" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ms-resource:AppName" ForegroundText="light" BackgroundColor="#0D5CAB">
+        <DefaultTile ShowName="logoOnly" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
