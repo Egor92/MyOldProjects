@@ -1,0 +1,15 @@
+﻿<Window x:Class="VisualBrushDadat.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Title="MainWindow" Height="350" Width="525">
+	<Grid>
+		<WrapPanel>
+			<Grid Width="100" Height="100">
+				<Grid.Background>
+					<VisualBrush Visual="{Binding ElementName=LightBulbButton}" />
+				</Grid.Background>
+			</Grid>
+			<Button x:Name="LightBulbButton" Style="{StaticResource ResourceKey=LightBulbButtonStyle}" Width="100" Height="100" />
+		</WrapPanel>
+	</Grid>
+</Window>
