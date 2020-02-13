@@ -1,0 +1,74 @@
+﻿<Window x:Class="VNNG2013.Windows.CreateNewTacticWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:VNNG2013.Resources.Controls"
+		Loaded="Window_Loaded"
+        Title="CreateNewTacticWindow" Height="300" Width="500">
+	
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="1*" />
+		</Grid.ColumnDefinitions>
+
+		<!--Футбольное поле-->
+		<Border BorderBrush="Black" BorderThickness="1" Margin="3">
+			<Grid>
+				<controls:FootballFieldControl />
+				<Viewbox>
+					<ItemsControl x:Name="PlayerControlsList" Margin="50,50,200,50">
+						<ItemsControl.ItemsSource>
+							<x:Array Type="{x:Type controls:PlayerControl}">
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+								<controls:PlayerControl />
+							</x:Array>
+						</ItemsControl.ItemsSource>
+						<ItemsControl.ItemsPanel>
+							<ItemsPanelTemplate>
+								<Canvas Width="680" Height="1050" />
+							</ItemsPanelTemplate>
+						</ItemsControl.ItemsPanel>
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<controls:PlayerControl />
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</Viewbox>
+			</Grid>
+		</Border>
+
+
+		<!--Выбор стандартной тактики-->
+		<Grid Grid.Column="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="40" />
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+			</Grid.RowDefinitions>
+			<Grid Grid.Row="0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="62" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="62" />
+				</Grid.ColumnDefinitions>
+				<Button x:Name="ToUsePreviewStandartTacticButton" Grid.Column="0" Content="&lt;-" Click="ToChangeStandartTactic" />
+				<TextBlock x:Name="CurrentTacticTextBlock" Grid.Column="1" Text="{Binding Path=CurrentTactic.Name, Mode=OneTime}"  />
+				<Button x:Name="ToUseNextStandartTacticButton" Grid.Column="2" Content="->" Click="ToChangeStandartTactic"  />
+			</Grid>
+			<Button x:Name="StrFormationTextButton" Grid.Row="1" Content="{Binding Path=CurrentTactic.CurrentStrFormation.Text, Mode=OneTime}" Click="ToChangeStrFormation" />
+			<Button x:Name="MidFormationTextButton" Grid.Row="2" Content="{Binding Path=CurrentTactic.CurrentMidFormation.Text, Mode=OneTime}" Click="ToChangeMidFormation" />
+			<Button x:Name="DefFormationTextButton" Grid.Row="3" Content="{Binding Path=CurrentTactic.CurrentDefFormation.Text, Mode=OneTime}" Click="ToChangeDefFormation" />
+		</Grid>
+	</Grid>
+</Window>

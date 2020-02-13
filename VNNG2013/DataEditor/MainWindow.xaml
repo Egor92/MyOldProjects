@@ -1,0 +1,145 @@
+﻿<Window x:Class="DataEditor.MainWindow"
+		xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=WPFToolkit.Extended"
+		xmlns:DataEditor="clr-namespace:DataEditor"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:converters="clr-namespace:ClassLibrary.Converters;assembly=ClassLibrary"
+		Title="Data Editor" Height="450" Width="900"
+		x:Name="RootWindow"
+		Closing="Window_Closing"
+		KeyDown="Window_KeyDown"
+		WindowState="Maximized"
+		WindowStyle="None"
+		
+		>
+	<Window.CommandBindings>
+		<CommandBinding Command="Open" Executed="OpenFile" />
+		<CommandBinding Command="Save" Executed="SaveFile" CanExecute="CanSave" />
+		<CommandBinding Command="SaveAs" Executed="SaveFileAs" CanExecute="CanSave" />
+		<CommandBinding Command="Close" Executed="ExitApplication"  />
+	</Window.CommandBindings>
+	
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		
+		<!-- Меню -->
+		<Menu Height="23" VerticalAlignment="Top" Grid.ColumnSpan="3">
+			<MenuItem Header="Файл">
+				<MenuItem Header="Открыть файл" Command="Open" />
+				<MenuItem Header="Сохранить файл" Name="SaveMenuItem" Command="ApplicationCommands.Save" />
+				<MenuItem Header="Сохранить файл как" Command="ApplicationCommands.SaveAs" />
+				<MenuItem Header="Сохранить в новый файл" Click="SaveToNewFileMenuItem_Click" IsEnabled="{Binding ElementName=SaveMenuItem, Path=IsEnabled, Mode=OneWay}" InputGestureText="Ctrl+Q" />
+				<Separator />
+				<MenuItem Header="Выход" Command="Close" InputGestureText="Ctrl+Shift+E" />
+			</MenuItem>
+			<MenuItem Header="Вид">
+				<MenuItem Header="Во весь экран" Click="ToMaximizedWindow" IsCheckable="True">
+					<MenuItem.IsChecked>
+						<Binding ElementName="RootWindow" Path="WindowStyle" Mode="OneWay">
+							<Binding.ConverterParameter>
+								None
+							</Binding.ConverterParameter>
+							<Binding.Converter>
+								<converters:EnumToBoolConverter />
+							</Binding.Converter>
+						</Binding>
+					</MenuItem.IsChecked>
+				</MenuItem>
+				<MenuItem Header="В окне" Click="ToNormalWindow" IsCheckable="True">
+					<MenuItem.IsChecked>
+						<Binding ElementName="RootWindow" Path="WindowStyle" Mode="OneWay">
+							<Binding.ConverterParameter>
+								SingleBorderWindow
+							</Binding.ConverterParameter>
+							<Binding.Converter>
+								<converters:EnumToBoolConverter />
+							</Binding.Converter>
+						</Binding>
+					</MenuItem.IsChecked>
+				</MenuItem>
+			</MenuItem>
+		</Menu>
+		
+		
+		
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="120" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+		
+			
+			
+			
+			<!-- Список изменяемых сущностей БД -->
+			<ListView Name="EntitiesList" Grid.Column="0" MouseDoubleClick="EntitiesList_DoubleClick">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<Label Content="{Binding}" />
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+
+
+			<Grid Grid.Column="1">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="175" MinWidth="135" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<!-- Записи таблицы БД -->
+				<Grid Grid.Column="0">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+
+					<Grid Grid.Row="0">
+						<TextBox Name="FilterTextBox" TextChanged="ApplyFiltering" />
+					</Grid>
+
+					<ListView Name="ObjectsList" Grid.Row="1" SelectionChanged="ObjectsList_SelectionChanged">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Path=DisplayedText, Mode=OneWay}" />
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+
+					<StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+						<Button Margin="2,0" Width="65" Content="Добавить" Click="CreateDBObject_Click" />
+						<Button Margin="2,0" Width="65" Content="Удалить" Click="DeleteDBObject_Click" />
+					</StackPanel>
+				</Grid>
+
+
+
+				<!-- Область для редактирования -->
+				<Grid Grid.Column="1">
+					<DataEditor:EditingArea x:Name="EditingArea" />
+				</Grid>
+
+
+
+
+				<!-- Перетаскиваемый разделитель -->
+				<GridSplitter Grid.Column="1" Width="2"
+						  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+			</Grid>
+
+
+
+
+
+			<!-- Перетаскиваемый разделитель -->
+			<GridSplitter Grid.Column="1" Width="2"
+						  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+		</Grid>
+
+		<toolkit:BusyIndicator x:Name="BusyIndicator" Grid.ColumnSpan="5" Grid.RowSpan="5" />
+	</Grid>
+</Window>

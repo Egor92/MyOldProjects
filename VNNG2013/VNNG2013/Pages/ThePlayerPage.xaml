@@ -1,0 +1,38 @@
+﻿<Page x:Class="VNNG2013.Pages.ThePlayerPage"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=WPFToolkit.Extended"
+		Title="ThePlayerPage">
+	<Grid>
+		
+		<TabControl>
+			<TabItem Header="Добавить нового менеджера" Name="AddNewPlayer_TabItem">
+				<Grid Height="200" Width="300">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="30" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<StackPanel Grid.RowSpan="2">
+						<TextBlock Height="24" Margin="3,0" HorizontalAlignment="Right" Text="Фамилия:" />
+						<TextBlock Height="24" Margin="3,0" HorizontalAlignment="Right" Text="Имя:" />
+						<TextBlock Height="24" Margin="3,0" HorizontalAlignment="Right" Text="День рождения:" />
+					</StackPanel>
+					
+					<StackPanel Grid.Column="1" Grid.RowSpan="2">
+						<TextBox x:Name="Surname_TextBox" Height="24" />
+						<TextBox x:Name="Name_TextBox" Height="24" />
+						<DatePicker x:Name="Birthday_DatePicker" Height="24" DisplayDateStart="01/01/1938" DisplayDateEnd="12/31/1998" SelectedDate="01/01/1985" />
+					</StackPanel>
+
+					<Button Grid.ColumnSpan="2" Grid.Row="1" Content="Создать" HorizontalAlignment="Right" Width="100" Margin="3" Click="CreateNewManager"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+		
+	</Grid>
+</Page>
